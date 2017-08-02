@@ -3,8 +3,8 @@
 <suite name="Suite">
     <test name="Test">
         <classes>
-            <class name="dp.cmd.api.basic"/>
-
+            <class name="dp.cmd.api.Tests.FilterAPI"/>
+            <class name="dp.cmd.api.Tests.ImportAPI"/>
         </classes>
     </test> <!-- Test -->
 </suite> <!-- Suite -->
