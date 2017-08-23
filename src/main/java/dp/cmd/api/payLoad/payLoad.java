@@ -27,7 +27,7 @@ public class payLoad {
 
         String data = "{\n" +
                 "  \"recipe\": \"hello\",\n" +
-                "  \"state\": \"New\",\n" +
+                "  \"state\": \"new\",\n" +
                 "  \"files\": [\n" +
                 "    {\n" +
                 "      \"alias_name\": \"CPI COICOP v4\",\n" +

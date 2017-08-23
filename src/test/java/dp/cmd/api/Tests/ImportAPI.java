@@ -148,7 +148,7 @@ public class ImportAPI {
                 body(payLoad.putAddAFileIntoAJob()).
                 when().
                 put(resources.jobsStatePutData() + context.getAttribute("job_id")+ Util.getRandomInt(3) + "/files").
-                then().assertThat().statusCode(404).body(containsString("Import job not found"));
+                then().assertThat().statusCode(404).body(containsString("Resource not found"));
 
     }
 
@@ -162,7 +162,7 @@ public class ImportAPI {
         when().get("/instances/"+context.getAttribute("instanceId")).
                 then().assertThat().statusCode(200).and().contentType(ContentType.JSON).and().
                 body("instance_id", equalTo(context.getAttribute("instanceId"))).and().
-                body("state", equalTo("Created"));
+                body("state", equalTo("created"));
 
     }
 
