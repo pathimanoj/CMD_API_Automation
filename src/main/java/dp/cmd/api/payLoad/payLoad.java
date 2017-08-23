@@ -28,11 +28,10 @@ public class payLoad {
         String data = "{\n" +
                 "  \"recipe\": \"hello\",\n" +
                 "  \"state\": \"New\",\n" +
-                "  \"number_of_instances\": 2,\n" +
                 "  \"files\": [\n" +
                 "    {\n" +
-                "      \"alias_name\": \"v4\",\n" +
-                "      \"url\": \"https://s3-eu-west-1.amazonaws.com/dp-publish-content-test/OCIGrowth.csv\"\n" +
+                "      \"alias_name\": \"CPI COICOP v4\",\n" +
+                "      \"url\": \"https://s3-eu-west-1.amazonaws.com/dp-frontend-florence-file-uploads/8192-teams-report-02-08-2017xls\"\n" +
                 "    }\n" +
                 "  ]\n" +
                 "}";

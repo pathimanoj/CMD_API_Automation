@@ -30,7 +30,7 @@ public class ImportAPI {
         FileInputStream fis=new FileInputStream("//Users//manojpathi//IdeaProjects//CMD_API_Automation//src//main//resources//env.properties");
         prop.load(fis);
 
-        RestAssured.baseURI= prop.getProperty("HOST");
+        RestAssured.baseURI= prop.getProperty("ImportAPI_Host");
     }
 
 
@@ -58,8 +58,7 @@ public class ImportAPI {
         String job_id = js.get("job_id");
         context.setAttribute("job_id", job_id);
 
-        String fullLink = js.get("links.instance_ids[0]");
-        String instanceId = fullLink.replace("http://localhost:21800/instances/", "");
+        String instanceId = js.get("instances[0].id");
         context.setAttribute("instanceId", instanceId);
     }
 
